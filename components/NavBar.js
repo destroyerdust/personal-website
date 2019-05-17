@@ -3,8 +3,8 @@ import Link from 'next/link'
 const NavBar = () => (
   <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
     <a className="navbar-brand" href="/">
-    <i className="fas fa-align-left" />
-    <style jsx>{`
+      <i className="fas fa-align-left" />
+      <style jsx>{`
         i {
           padding-right: 5px;
         }
