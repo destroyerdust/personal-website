@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const NavBar = () => (
   <nav className="navbar navbar-expand navbar-dark bg-dark mb-4">
@@ -9,27 +9,36 @@ const NavBar = () => (
           padding-right: 5px;
         }
       `}</style>
-      Sean Barkley</a>
+      Sean Barkley
+    </a>
 
     <div className="container">
       <div className="collapse navbar-collapse">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link prefetch href="/"><a className="nav-link">Home</a></Link>
+            <Link prefetch href="/">
+              <a className="nav-link">Home</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <Link prefetch href="/about"><a className="nav-link">About</a></Link>
+            <Link prefetch href="/about">
+              <a className="nav-link">About</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <Link prefetch href="/projects"><a className="nav-link">Projects</a></Link>
+            <Link prefetch href="/projects">
+              <a className="nav-link">Projects</a>
+            </Link>
           </li>
           <li className="nav-item">
-            <Link prefetch href="/contact"><a className="nav-link">Contact</a></Link>
+            <Link prefetch href="/contact">
+              <a className="nav-link">Contact</a>
+            </Link>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-)
+);
 
-export default NavBar
+export default NavBar;

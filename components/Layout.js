@@ -1,15 +1,12 @@
-import Header from './Header'
+import Header from "./Header";
 
-const layoutStyle = {
-}
+const layoutStyle = {};
 
-const Layout = (props) => (
+const Layout = props => (
   <div style={layoutStyle}>
     <Header />
-    <div className="container">
-      {props.children}
-    </div>
+    <div className="container">{props.children}</div>
   </div>
-)
+);
 
-export default Layout
+export default Layout;
