@@ -31,6 +31,11 @@ const NavBar = () => (
             </Link>
           </li>
           <li className="nav-item">
+            <Link prefetch href="/twitch">
+              <a className="nav-link">Twitch</a>
+            </Link>
+          </li>          
+          <li className="nav-item">
             <Link prefetch href="/contact">
               <a className="nav-link">Contact</a>
             </Link>
