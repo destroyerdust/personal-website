@@ -5,7 +5,7 @@ const layoutStyle = {};
 const Layout = props => (
   <div style={layoutStyle}>
     <Header />
-    <div className="container">{props.children}</div>
+    <div>{props.children}</div>
   </div>
 );
 
