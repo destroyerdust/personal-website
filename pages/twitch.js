@@ -32,6 +32,11 @@ class TwitchPlayer extends React.Component {
         <div className="container">
           <div id={this.props.targetID} />
         </div>
+        <style jsx global>{`
+          body {
+            background-color: #0f0e11;
+          }
+        `}</style>
       </Layout>
     );
   }
