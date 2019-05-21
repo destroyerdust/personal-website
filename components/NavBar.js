@@ -12,7 +12,6 @@ const NavBar = () => (
       Sean Barkley
     </a>
 
-    <div className="container">
       <div className="collapse navbar-collapse">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
@@ -42,7 +41,7 @@ const NavBar = () => (
           </li>
         </ul>
       </div>
-    </div>
+    
   </nav>
 );
 
