@@ -1,5 +1,4 @@
 import Head from "next/head";
-import NavBar from "./NavBar";
 
 const Header = () => (
   <div>
@@ -36,7 +35,6 @@ const Header = () => (
         crossOrigin="anonymous"
       />
     </Head>
-    <NavBar />
   </div>
 );
 

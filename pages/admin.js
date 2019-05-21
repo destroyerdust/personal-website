@@ -4,7 +4,9 @@ import "firebase/auth";
 import "firebase/firestore";
 import "isomorphic-unfetch";
 import clientCredentials from "../credentials/client";
-import Layout from "../components/Layout";
+import Dashboard from "../components/Dashboard";
+
+import DashNav from "../components/DashNav";
 
 export default class Admin extends Component {
   static async getInitialProps({ req, query }) {
@@ -124,8 +126,29 @@ export default class Admin extends Component {
     const { user, value, messages } = this.state;
 
     return (
-      <Layout>
-        <div className="container">
+      <Dashboard>
+        <div className="container-fullwidth">
+          <div className="row">
+            <div className="col-sm-2 dash-nav-left">Left Nav</div>
+            <div className="col-sm-10 dash-nav-right-top">
+              {user ? (
+                <DashNav name={user.displayName} image={user.photoURL} />
+              ) : (
+                <DashNav />
+              )}
+              
+            </div>
+            <style jsx>{`
+              .dash-nav-left {
+                background-color: #646c9a;
+              }
+
+              div.dash-nav-right-top {
+                padding: 0;
+              }
+            `}</style>
+          </div>
+
           {user ? (
             <button onClick={this.handleLogout}>Logout</button>
           ) : (
@@ -151,7 +174,7 @@ export default class Admin extends Component {
             </div>
           )}
         </div>
-      </Layout>
+      </Dashboard>
     );
   }
 }
