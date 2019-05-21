@@ -9,8 +9,7 @@ class TwitchPlayer extends React.Component {
     const width = "940";
     const height = "480";
     const channel = "monstercat";
-    const autoplay = "false";
-    return { targetID, width, height, channel, autoplay };
+    return { targetID, width, height, channel };
   }
   componentDidMount() {
     let embed;

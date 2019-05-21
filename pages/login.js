@@ -1,46 +1,43 @@
 import Layout from "../components/Layout";
 
-export default function Contact() {
+export default function About() {
   return (
     <Layout>
       <div className="container">
+        <p className="">Login Page</p>
+
+        <div className="login">
         <form action="">
           <div className="form-gropup">
-            <label htmlFor="nameInput">Name</label>
+            <label htmlFor="userNameInput">Username</label>
             <input
               type="text"
               className="form-control"
-              id="nameInput"
+              id="userNameInput"
               aria-describedby="nameHelp"
-              placeholder="Enter name"
+              placeholder="Username"
             />
           </div>
 
           <div className="form-group">
-            <label htmlFor="emailInput">Email Address</label>
+            <label htmlFor="passwordInput">Password</label>
             <input
               type="email"
               className="form-control"
-              id="emailInput"
-              aria-describedby="emailHelp"
-              placeholder="Enter email"
+              id="passwordInput"
+              aria-describedby="passwordHelp"
+              placeholder="Password"
               required
             />
             <div className="valid-feedback">Looks good!</div>
-            <small id="emailHelp" className="form-text text-muted">
-              I'll never share your email with anyone else.
-            </small>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="commentInput">Comment</label>
-            <textarea className="form-control" id="commentInput" rows="3" />
           </div>
 
           <button className="btn btn-primary" type="submit">
             Submit
           </button>
         </form>
+        <a href="/auth/google">Sign In with Google</a>
+        </div>
       </div>
     </Layout>
   );
